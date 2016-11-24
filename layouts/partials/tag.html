@@ -1,0 +1,16 @@
+<section class="section">
+<div class="container">
+    <nav>
+        <div class="nav-left">
+            <p class="nav-item">tags:</p>
+            {{ range .Params.tags }}
+            <span class="nav-item">
+                <i class="fa fa-tags" aria-hidden="true">
+                    <a href="/tags/{{ . | urlize }}/">{{ . }}</a>
+                </i>
+            </span>
+            {{ end }}
+        </div>
+    </nav>
+</div>
+</section>
